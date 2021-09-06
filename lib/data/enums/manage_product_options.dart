@@ -1,0 +1,4 @@
+enum ManageProductOptions {
+  add,
+  edit,
+}
