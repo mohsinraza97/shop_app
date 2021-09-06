@@ -40,4 +40,4 @@ Click [here](https://github.com/mohsinraza97/shop_app/blob/main/shop-app.apk?raw
 * Built with MVVM Architecture.
 * Utilized Provider for State Management.
 * Support for Mock Implementations for Unit Testing.
-* Contains utilities, constants, etc.
+* Includes miscellaneous packages, utilities, constants, etc.
