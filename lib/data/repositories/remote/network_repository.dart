@@ -9,7 +9,7 @@ import '../../enums/network_request_type.dart';
 import '../../../ui/resources/app_strings.dart';
 import '../../models/network/api_response.dart';
 import '../../services/local/storage_service.dart';
-import '../../app_locator.dart';
+import '../../../di/app_locator.dart';
 import '../../models/entities/product.dart';
 import '../../../utils/constants/network_constants.dart';
 import '../../services/remote/network_service.dart';

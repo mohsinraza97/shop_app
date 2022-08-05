@@ -8,7 +8,7 @@ import 'ui/view_models/auth/auth_view_model.dart';
 import 'ui/resources/app_assets.dart';
 import 'ui/resources/app_strings.dart';
 import 'ui/resources/app_colors.dart';
-import 'data/app_locator.dart';
+import 'di/app_locator.dart';
 import 'utils/constants/route_constants.dart';
 import 'utils/utilities/log_utils.dart';
 import 'ui/view_models/cart/cart_view_model.dart';

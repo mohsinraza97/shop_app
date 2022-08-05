@@ -2,7 +2,7 @@ import '../../../data/services/local/storage_service.dart';
 import '../../../data/models/ui/ui_response.dart';
 import '../../resources/app_strings.dart';
 import '../../../data/models/entities/user.dart';
-import '../../../data/app_locator.dart';
+import '../../../di/app_locator.dart';
 import '../../../data/services/entities/auth_service.dart';
 import '../base_view_model.dart';
 

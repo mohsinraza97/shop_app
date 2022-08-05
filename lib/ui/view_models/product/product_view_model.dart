@@ -1,15 +1,19 @@
 import '../../../data/models/ui/ui_response.dart';
 import '../../resources/app_strings.dart';
-import '../../../data/app_locator.dart';
+import '../../../di/app_locator.dart';
 import '../../../data/services/entities/product_service.dart';
 import '../base_view_model.dart';
 import '../../../data/models/entities/product.dart';
 
 class ProductViewModel extends BaseViewModel {
-  final Product? product;
-  final _service = locator<ProductService>();
+  Product? product;
+  var _service = locator<ProductService>();
 
-  ProductViewModel(this.product);
+  ProductViewModel([this.product]);
+
+  set service(ProductService service) {
+    _service = service;
+  }
 
   Future<UiResponse<bool>> updateFavoriteStatus() async {
     product?.isFavorite = !(product?.isFavorite ?? false);

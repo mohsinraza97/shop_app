@@ -1,7 +1,7 @@
 import 'package:uuid/uuid.dart';
 import '../../../data/models/ui/ui_response.dart';
 import '../../resources/app_strings.dart';
-import '../../../data/app_locator.dart';
+import '../../../di/app_locator.dart';
 import '../../../data/services/entities/order_service.dart';
 import '../base_view_model.dart';
 import '../../../data/models/entities/cart.dart';

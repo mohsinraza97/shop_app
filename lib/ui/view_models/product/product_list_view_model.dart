@@ -2,13 +2,17 @@ import 'package:uuid/uuid.dart';
 import '../../resources/app_strings.dart';
 import '../../../data/models/ui/ui_response.dart';
 import '../../../data/services/entities/product_service.dart';
-import '../../../data/app_locator.dart';
+import '../../../di/app_locator.dart';
 import '../base_view_model.dart';
 import '../../../data/models/entities/product.dart';
 
 class ProductListViewModel extends BaseViewModel {
   List<Product> _products = [];
-  final _service = locator<ProductService>();
+  var _service = locator<ProductService>();
+
+  set service(ProductService service) {
+    _service = service;
+  }
 
   List<Product> get products => _products;
 
